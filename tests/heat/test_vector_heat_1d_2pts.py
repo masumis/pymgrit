@@ -38,6 +38,10 @@ def test_vector_heat_1d_2pts_add():
     np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, 3 * np.ones(3))
     np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, 3 * np.ones(3))
 
+    vector_heat_1d_2pts_res += vector_heat_1d_2pts_1
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, 4 * np.ones(3))
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, 4 * np.ones(3))
+
 
 def test_vector_heat_1d_2pts_sub():
     """
@@ -53,6 +57,30 @@ def test_vector_heat_1d_2pts_sub():
     vector_heat_1d_2pts_res = vector_heat_1d_2pts_2 - vector_heat_1d_2pts_1
     np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, np.ones(3))
     np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, np.ones(3))
+
+    vector_heat_1d_2pts_res -= vector_heat_1d_2pts_2
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, -np.ones(3))
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, -np.ones(3))
+
+def test_vector_heat_1d_2pts_mul():
+    """
+    Test __mul__
+    """
+    vector_heat_1d_2pts_1 = VectorHeat1D2Pts(size=3, dtau=0.1)
+    vector_heat_1d_2pts_1.values_first_time_point = np.ones(3)
+    vector_heat_1d_2pts_1.values_second_time_point = np.ones(3)
+
+    vector_heat_1d_2pts_res = vector_heat_1d_2pts_1 * 3
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, np.ones(3)*3)
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, np.ones(3)*3)
+
+    vector_heat_1d_2pts_res = 5 * vector_heat_1d_2pts_1
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, np.ones(3)*5)
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, np.ones(3)*5)
+
+    vector_heat_1d_2pts_res *= 4
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_first_time_point, np.ones(3)*20)
+    np.testing.assert_equal(vector_heat_1d_2pts_res.values_second_time_point, np.ones(3)*20)
 
 
 def test_vector_heat_1d_2pts_norm():
