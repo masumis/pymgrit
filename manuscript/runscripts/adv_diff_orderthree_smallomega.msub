@@ -1,0 +1,98 @@
+#!/bin/bash
+#MSUB -q pbatch
+#MSUB -l nodes=4
+#MSUB -A paratime
+#MSUB -l walltime=11:59:00
+#MSUB -o orderthree_smallomega_test
+#MSUB -e orderthree_smallomega_test_err
+
+# Order 3 tests
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.6  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.7  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.8  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.9  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.0  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.15  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                             
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.6  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.7  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.8  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.9  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.0  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.15  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                             
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.6  --num-time-steps 768  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.7  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.8  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.9  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.0  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.15  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+                                                                                                                                          
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.6  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.7  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.8  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.9  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.0  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.1 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.15  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+
+#
+
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.6  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.7  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.8  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.9  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.0  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.15  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                             
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.6  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.7  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.8  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.9  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.0  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.15  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                             
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.6  --num-time-steps 768  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.7  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.8  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.9  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.0  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.15  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+                                                                                                                                          
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.6  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.7  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.8  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.9  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.0  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.01 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.15  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+
+###
+
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.6  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.7  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.8  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 0.9  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.0  --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 1 -CWt 1.15 --num-time-steps 192  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                                        
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.6  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.7  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.8  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 0.9  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.0  --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 2 -CWt 1.15 --num-time-steps 384  --mesh ../mfem/data/periodic-hexagon.mesh 
+#                                                                                                                                                        
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.6  --num-time-steps 768  --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.7  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.8  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 0.9  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.0  --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 3 -CWt 1.15 --num-time-steps 768 --mesh ../mfem/data/periodic-hexagon.mesh 
+                                                                                                                                                         
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.6  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.7  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.8  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 0.9  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.0  --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+srun -N 4 -n 72 ./drive-adv-diff-DG --order 3 --ode-solver 13 --diffusion 0.001 -prec 3 -access 0 -mi 75 -cf 2 -px 1 -tf 20.0 --refine-serial 4 -CWt 1.15 --num-time-steps 1536 --mesh ../mfem/data/periodic-hexagon.mesh 
+
+
