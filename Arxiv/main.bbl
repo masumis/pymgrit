@@ -1,0 +1,235 @@
+\begin{thebibliography}{10}
+
+\bibitem{Ga2015}
+Gander MJ.
+\newblock 50 years of Time Parallel Time Integration.
+\newblock In: Carraro T, Geiger M, Körkel S, and Rannacher R, editors.
+  Multiple Shooting and Time Domain Decomposition. Springer; 2015. p. 69--114.
+
+\bibitem{Fa2014}
+Falgout RD, Friedhoff S, Kolev TV, MacLachlan SP, and Schroder JB.
+\newblock Parallel Time Integration with Multigrid.
+\newblock SIAM J Sci Comput. 2014;{\bf 36}(6):C635--C661.
+
+\bibitem{OnSc2019}
+Ong BW, and Schroder JB.
+\newblock Applications of Time Parallelization.
+\newblock Comput Vis Sci. 2020;{\bf 23}(1):1--15.
+
+\bibitem{Ni1964}
+Nievergelt J.
+\newblock Parallel methods for integrating ordinary differential equations.
+\newblock Comm ACM. 1964;{\bf 7}:731--733.
+
+\bibitem{TrOo2001}
+Trottenberg U, Oosterlee C, and Sch$\ddot{\mbox{u}}$ller A.
+\newblock Multigrid.
+\newblock London, UK: Academic Press; 2001.
+
+\bibitem{BrHeMc2000}
+Briggs WL, Henson VE, and McCormick SF.
+\newblock A multigrid tutorial.
+\newblock 2nd ed. Philadelphia, PA, USA: SIAM; 2000.
+
+\bibitem{Fa2016}
+Falgout RD, Manteuffel TA, O'Neill B, and Schroder JB.
+\newblock Multigrid reduction in time for nonlinear parabolic problems: A case
+  study.
+\newblock SIAM Journal on Scientific Computing. 2017;{\bf 39}(5):S298--S322.
+
+\bibitem{FalKatz2014}
+Falgout RD, Katz A, Kolev TV, Schroder JB, Wissink A, and Yang UM. 2015.
+  \textit{Parallel Time Integration with Multigrid Reduction for a Compressible
+  Fluid Dynamics Application}.
+\newblock LLNL-JRNL-663416. Lawrence Livermore National Laboratory.
+
+\bibitem{ChrGaGuFaSc2019b}
+Christopher J, Gao X, Guzik SM, Falgout R, and Schroder J.
+\newblock Fully Parallelized Space-Time Adaptive Meshes for the Compressible
+  Navier-Stokes Equations Using Multigrid Reduction in Time.
+\newblock Computing and Visualization in Science. 2020;{\bf 23}:1--19.
+
+\bibitem{HeNoRoSc2017}
+Hessenthaler A, Nordsletten D, R{\"o}hrle O, Schroder J, and Falgout R.
+\newblock Convergence of the multigrid-reduction-in-time algorithm for the
+  linear elasticity equations.
+\newblock Numerical Linear Algebra with Applications. 2018;{\bf 25}(3):e2155.
+
+\bibitem{LeFaWoTo2016}
+Lecouvez M, Falgout RD, Woodward CS, and Top P.
+\newblock A parallel multigrid reduction in time method for power systems.
+\newblock Power and Energy Society General Meeting (PESGM). 2016;p. 1--5.
+
+\bibitem{GuFaToWoSc2020}
+G\"{u}nther S, Falgout RD, Top P, Woodward CS, and Schroder JB.
+\newblock Parallel-in-Time Solution of Power Systems with Unscheduled Events.
+\newblock Power and Energy Society General Meeting (PESGM). 2019;p. 1--5.
+
+\bibitem{FrHaKuSc2018}
+Friedhoff S, Hahne J, Kulchytska-Ruchka I, and Sch{\"o}ps S.
+\newblock Exploring parallel-in-time approaches for eddy current problems.
+\newblock In: Progress in Industrial Mathematics at ECMI 2018. Springer; 2019.
+  p. 373--379.
+
+\bibitem{BoFrHaSc2020}
+Bolten M, Friedhoff S, Hahne J, and Sch\"{o}ps S.
+\newblock Parallel-in-time simulation of an electrical machine using {MGRIT}.
+\newblock Comput Vis Sci. 2020;{\bf 23}(1-4):Paper No. 14, 14.
+
+\bibitem{GuRuScCyGa2018}
+G\"{u}nther S, Ruthotto L, Schroder JB, Cyr EC, and Gauger NR.
+\newblock Layer-Parallel Training of Deep Residual Neural Networks.
+\newblock SIAM Journal on Data Science. 2019 (accepted);ArXiv preprint
+  arXiv:1812.04352.
+
+\bibitem{CyGuSc2019}
+Cyr EC, G{\"u}nther S, and Schroder JB.
+\newblock Multilevel Initialization for Layer-Parallel Deep Neural Network
+  Training.
+\newblock International Journal of Computing and Visualization in Science and
+  Engineering. 2021;{\bf 1}:1--9.
+\newblock ArXiv preprint arXiv:1912.08974.
+
+\bibitem{LiMaTu2001}
+Lions JL, Maday Y, and Turinici G.
+\newblock R\'{e}solution d'{EDP} par un sch\'{e}ma en temps parar\'{e}el.
+\newblock CRAcad Sci Paris S\'{e}r I Math. 2001;{\bf 332}:661--668.
+
+\bibitem{MiWi2008}
+Minion ML, and Williams SA.
+\newblock Parareal and Spectral Deferred Corrections.
+\newblock In: Simos TE, editor. Numerical Analysis and Applied Mathematics. AIP
+  Conference Proceedings. AIP; 2008. p. 388--391.
+
+\bibitem{EmMi2012}
+Emmett M, and Minion ML.
+\newblock Toward an efficient parallel in time method for partial differential
+  equations.
+\newblock Commun Appl Math Comput Sci. 2012;{\bf 7}(1):105--132.
+
+\bibitem{Mi2010}
+Minion ML.
+\newblock A hybrid parareal spectral deferred corrections method.
+\newblock Comm App Math and Comp Sci. 2010;{\bf 5}(2):265--301.
+
+\bibitem{gander2007analysis}
+Gander MJ, and Vandewalle S.
+\newblock Analysis of the parareal time-parallel time-integration method.
+\newblock SIAM Journal on Scientific Computing. 2007;{\bf 29}(2):556--578.
+
+\bibitem{bolten2017multigrid}
+Bolten M, Moser D, and Speck R.
+\newblock A multigrid perspective on the parallel full approximation scheme in
+  space and time.
+\newblock Numerical Linear Algebra with Applications. 2017;{\bf 24}(6):e2110.
+
+\bibitem{AdBrHuTu2003}
+Adams M, Brezina M, Hu J, and Tuminaro R.
+\newblock Parallel multigrid smoothing: polynomial versus {G}auss-{S}eidel.
+\newblock J Comput Phys. 2003;{\bf 188}:593--610.
+
+\bibitem{BaFaKoYa2011}
+Baker AH, Falgout RD, and Yang TVKUM.
+\newblock Multigrid Smoothers for Ultraparallel Computing.
+\newblock SIAM J Sci Comput. 2011 Oct;{\bf 33}(5):2864--2887.
+
+\bibitem{Brandt_1977}
+Brandt A.
+\newblock Multi--Level Adaptive Solutions to Boundary--Value Problems.
+\newblock Math Comp. 1977;{\bf 31}(138):333--390.
+
+\bibitem{FriMac2015}
+Friedhoff S, and MacLachlan S.
+\newblock A generalized predictive analysis tool for multigrid methods.
+\newblock Numerical Linear Algebra with Applications. 2015;{\bf
+  22}(4):618--647.
+
+\bibitem{Do2016}
+V~Dobrev NAP Tz~Kolev, and Schroder JB.
+\newblock Two-level Convergence Theory for Multigrid Reduction in Time (MGRIT).
+\newblock SIAM J Sci Comput. 2017;{\bf 39}(5):S501--S527.
+
+\bibitem{HeSoNoRoFaSc2018}
+Hessenthaler A, Southworth BS, Nordsletten D, R{\"o}hrle O, Falgout RD, and
+  Schroder JB.
+\newblock Multilevel convergence analysis of multigrid-reduction-in-time.
+\newblock SIAM Journal on Scientific Computing. 2020;{\bf 42}:A771--A796.
+
+\bibitem{So2019}
+Southworth BS.
+\newblock Necessary conditions and tight two-level convergence bounds for
+  parareal and multigrid reduction in time.
+\newblock SIAM Journal on Matrix Analysis and Applications. 2019;{\bf
+  40}(2):564--608.
+
+\bibitem{FrSo2020}
+Friedhoff S, and Southworth BS.
+\newblock On “Optimal” h-independent convergence of Parareal and
+  multigrid-reduction-in-time using Runge-Kutta time integration.
+\newblock Numerical Linear Algebra with Applications. 2020;p. e2301.
+
+\bibitem{widom1989singular}
+Widom H.
+\newblock On the singular values of Toeplitz matrices.
+\newblock Zeitschrift f{\"u}r Analysis und ihre Anwendungen. 1989;{\bf
+  8}(3):221--229.
+
+\bibitem{capizzano1999extreme}
+Capizzano SS, and Tilli P.
+\newblock Extreme singular values and eigenvalues of non-Hermitian block
+  Toeplitz matrices.
+\newblock Journal of computational and applied mathematics. 1999;{\bf
+  108}(1-2):113--130.
+
+\bibitem{mfem}
+{MFEM}: {M}odular finite element methods library.
+\newblock {{\tt \small http://mfem.org}};.
+
+\bibitem{ArBrCoMa2002}
+Arnold DN, Brezzi F, Cockurn B, and Marini LD.
+\newblock Unified Analysis of Discontinuous {G}alerkin Methods for Elliptic
+  Problems.
+\newblock SIAM J Numer Anal. 2002;{\bf 39}:1749--1779.
+
+\bibitem{FEMM}
+Meeker C David\. Finite Element Method Magnetics, Version 4.2 (28Feb2018
+  Build);.
+\newblock Available from: \url{http://www.femm.info}.
+
+\bibitem{schoeps2013}
+Sch{\"o}ps S, Gersem HD, and Weiland T.
+\newblock Winding Functions in Transient Magnetoquasistatic Field-Circuit
+  Coupled Simulations.
+\newblock The International Journal for Computation and Mathematics in
+  Electrical and Electronic Engineering. 2013;(6):2063--2083.
+\newblock TEMF-Pub-DB TEMF002204.
+
+\bibitem{gander2019}
+Gander MJ, Kulchytska-Ruchka I, Niyonzima I, and Sch{\"o}ps S.
+\newblock A New Parareal Algorithm for Problems with Discontinuous Sources.
+\newblock SIAM Journal on Scientific Computing. 2019;(2):B375--B395.
+
+\bibitem{PyMGRIT}
+Hahne J, and Friedhoff S. {PyMGRIT}: Multigrid-Reduction-in-Time in {Python}
+  v1.0.
+\newblock Release 1.0; 2020.
+\newblock Available from: \url{https://github.com/pymgrit/pymgrit}.
+
+\bibitem{JHahne2021}
+Hahne J, Friedhoff S, and Bolten M. Algorithm 1016: PyMGRIT: A Python Package
+  for the Parallel-in-Time Method MGRIT. New York, NY, USA: Association for
+  Computing Machinery; 2021.
+
+\bibitem{Su2019_v2}
+Sugiyama M. Optimal Relaxation Weights for Multigrid Reduction In Time
+  ({MGRIT}). Dept. of Mathematics and Statistics, University of New Mexico;
+  2019.
+\newblock \url{https://digitalrepository.unm.edu/math_etds/147}.
+
+\bibitem{HoDeFaMaSc2019}
+Howse AJ, Sterck HD, Falgout RD, MacLachlan S, and Schroder J.
+\newblock Parallel-In-Time Multigrid with Adaptive Spatial Coarsening for The
+  Linear Advection and Inviscid Burgers Equations.
+\newblock SIAM Journal on Scientific Computing. 2019;{\bf 41}(1):A538--A565.
+
+\end{thebibliography}
